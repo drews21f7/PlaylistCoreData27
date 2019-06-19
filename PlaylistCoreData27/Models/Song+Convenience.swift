@@ -13,7 +13,7 @@ extension Song {
     @discardableResult
     convenience init(name: String, artist: String, playlist: Playlist, context: NSManagedObjectContext = CoreDataStack.managedObjectContext) {
         self.init(context: context)
-        self.title = title
+        self.title = name
         self.artist = artist
         self.playlist = playlist
     }
